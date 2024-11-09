@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    /*font-family: "Poppins", sans-serif;*/
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --text-color: #f5f5f5;
+    --big-font: 35px;
+    --main-color: #00abf0;
+    --border: .125rem solid #00abf0;
+}
+
+body {
+    background-image: url(images/technology.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+/* --- navbar --- */
+.navbar {
+    width: 1300px;
+    margin: 10px auto;
+    padding: 25px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .navbar .navbar-logo {
+        font-size: var(--big-font);
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+        .navbar span {
+            color: var(--main-color);
+        }
+    
+    .navbar ul {
+        display: flex;
+        gap: 35px;
+    }
+        .navbar ul li {
+            position: relative;
+        }
+            .navbar ul li a {
+                font-size: 20px;
+                transition: 0.3s ease;
+                color: var(--text-color);
+            }
+                .navbar ul li a::before {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    left: 0;
+                    bottom: -5px;
+                    background: var(--main-color);
+                    transition: 0.3s ease;
+                }
+                    .navbar ul li a:hover {
+                        color: var(--main-color);
+                    }
+                        .navbar ul li a:hover::before {
+                            width: 100%;
+                        }
+/* --- end navbar --- */
+
+/* --- container --- */
+.container {
+    width: 1300px;
+    height: 700px;
+    margin: 15px auto;
+    display: flex;
+}
+    .glass {
+        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.18);
+        box-shadow: 0 0 15px var(--main-color);
+    }
+/* --- end container --- */
+
+/* --- home profile-page --- */
+.profile-side {
+    width: 50%;
+    height: 100%;
+    padding: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .profile-side img {
+        max-width: 180px;
+        border-radius: 50%;
+        border: .25rem solid var(--main-color);
+        margin-bottom: .8rem;
+    }
+    .profile-side h1 {
+        font-size: 2.7rem;
+        line-height: 1;
+    }
+    .profile-side h3 {
+        font-size: 1.5rem;
+        color: var(--main-color);
+    }
+    .profile-side .social-media {
+        margin: .6rem 0 .8rem;
+    }
+        .profile-side .social-media a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: transparent;
+            border: var(--border);
+            border-radius: 50%;
+            font-size: 1.3rem;
+            color: var(--main-color);
+            margin: 0 .2rem;
+            transition: .5s;
+        }
+            .profile-side .social-media a:hover {
+                background: var(--main-color);
+                color: var(--text-color);
+            }
+    .profile-side p {
+        text-align: justify;
+    }
+    .profile-side .btn-box {
+        margin-top: 1.2rem;
+    }
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 9.5rem;
+            height: 3rem;
+            background: var(--main-color);
+            border: var(--border);
+            border-radius: .3rem;
+            font-size: 1rem;
+            color: var(--text-color);
+            font-weight: 500;
+            margin: 0 1rem;
+            transition: .5s;
+        }
+            .btn-box .btn {
+                background: transparent;
+                color: var(--main-color);
+            }
+                .btn-box .btn:hover {
+                    background: var(--main-color);
+                    color: var(--text-color);
+                }
+/* --- end home profile-page --- */
+
+/* --- home cards --- */
+.cards-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+}
+    #card_1 {
+        position: relative;
+        top: 70px;
+        left: 50px;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 0 15px var(--main-color);
+        rotate: -20deg;
+        transition: 1s;
+    }
+        #card_1 .bxl-windows {
+            width: 100%;
+            height: auto;
+            font-size: 4rem;
+            color: var(--main-color);
+            text-align: center;
+        }
+            #card_1:hover {
+                transform: scale(1.3);
+                rotate: 0deg;
+            }
+    #card_2 {
+        position: relative;
+        top: 60px;
+        left: 40px;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 0 15px var(--main-color);
+        rotate: -5deg;
+        transition: 1s;
+    }
+        #card_2 .bxs-server {
+            width: 100%;
+            height: auto;
+            font-size: 4rem;
+            color: var(--main-color);
+            text-align: center;
+        }
+            #card_2:hover {
+                transform: scale(1.3);
+                rotate: 0deg;
+            }
+    #card_3 {
+        position: relative;
+        top: 90px;
+        left: 40px;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 0 15px var(--main-color);
+        rotate: 20deg;
+        transition: 1s;
+    }
+        #card_3 .bxs-data {
+            width: 100%;
+            height: auto;
+            font-size: 4rem;
+            color: var(--main-color);
+            text-align: center;
+        }
+            #card_3:hover {
+                transform: scale(1.3);
+                rotate: 0deg;
+            }
+    #card_4 {
+        position: relative;
+        top: 370px;
+        left: -400px;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 0 15px var(--main-color);
+        rotate: -15deg;
+        transition: 1s;
+    }
+        #card_4 .bxl-html5 {
+            width: 100%;
+            height: auto;
+            font-size: 4rem;
+            color: var(--main-color);
+            text-align: center;
+        }
+            #card_4:hover {
+                transform: scale(1.3);
+                rotate: 0deg;
+            }
+    #card_5 {
+        position: relative;
+        top: -5px;
+        left: 40px;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 0 15px var(--main-color);
+        rotate: 0deg;
+        transition: 1s;
+    }
+        #card_5 .bxl-css3 {
+            width: 100%;
+            height: auto;
+            font-size: 4rem;
+            color: var(--main-color);
+            text-align: center;
+        }
+            #card_5:hover {
+                transform: scale(1.3);
+                rotate: 0deg;
+            }
+    #card_6 {
+        position: relative;
+        top: 50px;
+        left: 10px;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 0 15px var(--main-color);
+        rotate: 15deg;
+        transition: 1s;
+    }
+        #card_6 .bxl-java {
+            width: 100%;
+            height: auto;
+            font-size: 4rem;
+            color: var(--main-color);
+            text-align: center;
+        }
+            #card_6:hover {
+                transform: scale(1.3);
+                rotate: 0deg;
+            }
+/* --- end home cards --- */
