@@ -11,16 +11,9 @@
 :root {
     --text-color: #f5f5f5;
     --big-font: 35px;
-    --main-color: #00abf0;
+    --small-font: 22px;
+    --main-color: #007bf0;
     --border: .125rem solid #00abf0;
-}
-
-/*teefon*/
-@media screen and (max-width: 767px) {
-    .navbar .navbar-logo {
-        font-size: 20px;
-        letter-spacing: 0;
-    }
 }
 
 body {
@@ -31,9 +24,55 @@ body {
     color: var(--text-color);
 }
 
+/* --- telefon --- */
+@media screen and (max-width: 767px) {
+    header {
+        width: 500px;
+    }
+        .hamburger {
+            cursor: pointer;
+        }
+            .hamburger .line {
+                width: 30px;
+                height: 3px;
+                background: #fefefe;
+                margin: 6px 0;
+            }
+        .nav-bar {
+            height: 0;
+            position: absolute;
+            top: 130px;
+            left: 0;
+            right: 0;
+            max-width: 767px;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+            .nav-bar.active {
+                height: 250px;
+            }
+                .nav-bar ul {
+                    flex-direction: column;
+                    width: 500px;
+                    margin: 20px auto 0 auto;
+                    text-align: center;
+                    transition: 0.5s;
+                    opacity: 0;
+                }
+                    .nav-bar.active ul {
+                        opacity: 1;
+                    }
+                        .nav-bar ul li a {
+                            margin-bottom: 5px;
+                        }
+                        .nav-bar ul li:first-child a::before {
+                            width: 100%;
+                        }
+} /* --- end telefon --- */
+
 /* --- header --- */
-.header {
-    width: 1300px;
+header {
+    max-width: 1300px;
     margin: 15px auto 0;
     padding: 25px 50px;
     display: flex;
@@ -42,51 +81,54 @@ body {
 } /* --- end header --- */
 
     /* --- header-logo --- */
-    .header-logo {
+    .logo {
         font-size: var(--big-font);
         font-weight: bold;
         letter-spacing: 1px;
     }
-        .header-logo img {
+        .logo img {
             margin-right: 10px;
             margin-bottom: -12px;
             border-radius: 50%;
             box-shadow: 0 0 15px #00abf0;
         }
-        .header-logo span {
+        .logo span {
             color: var(--main-color);
         } /* --- end header-logo --- */
     
     /* --- nav-menu --- */
-    .nav-menu ul {
+    .nav-bar ul {
         display: flex;
         gap: 35px;      
     }
-        .nav-menu ul li {
+        .nav-bar ul li {
             position: relative;
-            font-weight: bold;
         }
-            .nav-menu ul li a {
+            .nav-bar ul li a {
                 font-size: 20px;
                 transition: 0.3s ease;
                 color: var(--text-color);
+                font-weight: bold;
+                border-radius: 50px;
+                padding: 10px 10px;
             }
-                .nav-menu ul li a::before {
-                    content: '';
-                    position: absolute;
-                    width: 0;
-                    height: 2px;
-                    left: 0;
-                    bottom: -5px;
-                    background: var(--main-color);
-                    transition: 0.3s ease;
+                .nav-bar ul li a:hover {
+                    color: var(--text-color);
+                    background: #00008B;
+                    box-shadow: 0 0 15px #00008B;
                 }
-                    .nav-menu ul li a:hover {
-                        color: var(--main-color);
+                .nav-bar ul li a.active {
+                    color: var(--text-color);
+                    background: #00008B;
+                }
+                    .nav-bar ul li a::before {
+                        bottom: -5px;
+                        background: var(--main-color);
+                        transition: 0.3s ease;
                     }
-                        .nav-menu ul li a:hover::before {
+                        .nav-bar ul li:first-child a::before {
                             width: 100%;
-                        }/* --- end nav-menu --- */
+                        } /* --- end nav-menu --- */
 
 /* --- container --- */
 .container {

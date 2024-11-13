@@ -13,24 +13,29 @@
 <body>
 
     <!-- header -->
-    <div class="header">
+    <header>
 
-        <div class="header-logo">
+        <div class="logo">
             <img src="images/w.ico" alt="W"><span>R</span>afał.
         </div>
-
-        <div class="nav-menu">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
             <ul>
-                <li><a href="#">Home</a></li>            
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </div>
+        </nav>
 
-    </div> <!-- end header -->
+    </header> <!-- end header -->
 
-    <div class="container glass">
+    <!-- container -->
+    <container class="container-glass">
 
         <div class="profile-side">
             <img src="images/rafal-walasek.png" alt="">
@@ -94,5 +99,15 @@
                 </div>
             </div>
         </div>
+    
+    </container> <!-- end container -->
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 
 </body>
