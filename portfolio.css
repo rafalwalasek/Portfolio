@@ -47,6 +47,12 @@ body {
         font-weight: bold;
         letter-spacing: 1px;
     }
+        .header-logo img {
+            margin-right: 10px;
+            margin-bottom: -12px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #00abf0;
+        }
         .header-logo span {
             color: var(--main-color);
         } /* --- end header-logo --- */
@@ -54,10 +60,11 @@ body {
     /* --- nav-menu --- */
     .nav-menu ul {
         display: flex;
-        gap: 35px;
+        gap: 35px;      
     }
         .nav-menu ul li {
             position: relative;
+            font-weight: bold;
         }
             .nav-menu ul li a {
                 font-size: 20px;
