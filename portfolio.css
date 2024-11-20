@@ -13,7 +13,8 @@
     --big-font: 35px;
     --small-font: 22px;
     --main-color: #007bf0;
-    --border: .125rem solid #00abf0;
+    --border: .125rem solid #00008B;
+    --main-light-color: #007bf0;
 }
 
 body {
@@ -24,56 +25,10 @@ body {
     color: var(--text-color);
 }
 
-/* --- telefon --- */
-@media screen and (max-width: 767px) {
-    header {
-        width: 500px;
-    }
-        .hamburger {
-            cursor: pointer;
-        }
-            .hamburger .line {
-                width: 30px;
-                height: 3px;
-                background: #fefefe;
-                margin: 6px 0;
-            }
-        .nav-bar {
-            height: 0;
-            position: absolute;
-            top: 130px;
-            left: 0;
-            right: 0;
-            max-width: 767px;
-            transition: 0.5s;
-            overflow: hidden;
-        }
-            .nav-bar.active {
-                height: 250px;
-            }
-                .nav-bar ul {
-                    flex-direction: column;
-                    width: 500px;
-                    margin: 20px auto 0 auto;
-                    text-align: center;
-                    transition: 0.5s;
-                    opacity: 0;
-                }
-                    .nav-bar.active ul {
-                        opacity: 1;
-                    }
-                        .nav-bar ul li a {
-                            margin-bottom: 5px;
-                        }
-                        .nav-bar ul li:first-child a::before {
-                            width: 100%;
-                        }
-} /* --- end telefon --- */
-
 /* --- header --- */
 header {
-    max-width: 1300px;
-    margin: 15px auto 0;
+    width: 1300px;
+    margin: 10px auto 0;
     padding: 25px 50px;
     display: flex;
     justify-content: space-between;
@@ -99,7 +54,7 @@ header {
     /* --- nav-menu --- */
     .nav-bar ul {
         display: flex;
-        gap: 35px;      
+        gap: 25px;     
     }
         .nav-bar ul li {
             position: relative;
@@ -131,106 +86,114 @@ header {
                         } /* --- end nav-menu --- */
 
 /* --- container --- */
-.container {
-    max-width: 1300px;
+container {
+    width: 1300px;
     height: 700px;
-    margin: 15px auto;
+    margin: 10px auto;
     display: flex;
-}
-    .glass {
-        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255,255,255,0.18);
-        box-shadow: 0 0 15px var(--main-color);
-    }
-/* --- end container --- */
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00008B;
+} /* --- end container --- */
 
-/* --- home profile-page --- */
-.profile-side {
-    max-width: 50%;
-    height: 100%;
-    padding: 5.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    .profile-side img {
-        width: 180px;
-        border-radius: 50%;
-        border: .25rem solid var(--main-color);
-        margin-bottom: .8rem;
+    /* --- profile-page --- */
+    .profile-page {
+        width: 650px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 90px 0 90px;
     }
-    .profile-side h1 {
-        font-size: 2.7rem;
-        line-height: 1;
-    }
-    .profile-side h3 {
-        font-size: 1.5rem;
-        color: var(--main-color);
-    }
-    .profile-side .social-media {
-        margin: .6rem 0 .8rem;
-    }
-        .profile-side .social-media a {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 2.5rem;
-            height: 2.5rem;
-            background: transparent;
-            border: var(--border);
+        .profile-page img {
+            width: 200px;
             border-radius: 50%;
-            font-size: 1.3rem;
-            color: var(--main-color);
-            margin: 0 .2rem;
-            transition: .5s;
+            border: .25rem solid #00008B;
+            margin-bottom: .8rem;
         }
-            .profile-side .social-media a:hover {
-                background: var(--main-color);
-                color: var(--text-color);
-            }
-    .profile-side p {
-        text-align: justify;
-    }
-    .profile-side .btn-box {
-        margin-top: 1.2rem;
-    }
-        .btn {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 9.5rem;
-            height: 3rem;
-            background: var(--main-color);
-            border: var(--border);
-            border-radius: .3rem;
-            font-size: 1rem;
-            color: var(--text-color);
-            font-weight: 500;
-            margin: 0 1rem;
-            transition: .5s;
+        .profile-page h1 {
+            font-size: 2.7rem;
+            line-height: 1;
         }
-            .btn-box .btn {
+        .profile-page h3 {
+            font-size: 1.5rem;
+            color: var(--main-light-color);
+        }
+        .profile-page .social-media {
+            margin: .6rem 0 .8rem;
+        }
+            .profile-page .social-media a {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 2.5rem;
+                height: 2.5rem;
                 background: transparent;
-                color: var(--main-color);
+                border: .125rem solid var(--main-light-color);
+                border-radius: 50%;
+                font-size: 1.3rem;
+                color: var(--main-light-color);
+                margin: 0 .2rem;
+                transition: .5s;
             }
-                .btn-box .btn:hover {
-                    background: var(--main-color);
+                .profile-page .social-media a:hover {
+                    background: #00008B;
                     color: var(--text-color);
+                    border: var(--border);
                 }
-/* --- end home profile-page --- */
+                .profile-page p {
+                    text-align: justify;
+                }
+                .profile-page .btn-box {
+                    margin-top: 1.2rem;
+                }
+                    .btn {
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 9.5rem;
+                        height: 3rem;
+                        background: var(--main-color);
+                        border: .125rem solid var(--main-light-color);
+                        border-radius: .3rem;
+                        font-size: 1rem;
+                        color: var(--text-color);
+                        font-weight: 500;
+                        margin: 0 1rem;
+                        transition: .5s;
+                    }
+                        .btn-box .btn {
+                            background: transparent;
+                            color: var(--main-light-color);
+                        }
+                            .btn-box .btn:hover {
+                                background: #00008B;
+                                color: var(--text-color);
+                                border: var(--border);
+                            } /* --- end profile-page --- */
 
-/* --- home cards --- */
-.cards-side {
-    max-width: 50%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-transform: uppercase;
-}
+    /* --- cards-page --- */
+    .cards-page {
+        width: 650px;
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+
+
+    
+    
+    
+        
+    
+
+
     #card_1 {
         position: relative;
         top: 70px;

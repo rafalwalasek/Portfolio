@@ -35,10 +35,11 @@
     </header> <!-- end header -->
 
     <!-- container -->
-    <container class="container-glass">
+    <container>
 
-        <div class="profile-side">
-            <img src="images/rafal-walasek.png" alt="">
+        <!-- profile page -->
+        <div class="profile-page">
+            <img src="images/rafal-walasek.png" alt="Rafal">
             <h1>Rafał Walasek</h1>
             <h3>Freelancer</h3>
 
@@ -54,9 +55,11 @@
             <div class="btn-box">
                 <a href="#" class="btn">Download CV</a>
             </div>
-        </div>
-            
-        <div class="cards-side">
+        </div> <!-- end profile page -->
+        
+        <!-- cards page -->
+        <div class="cards-page">
+
             <div id="card_1">
                 <i class='bx bxl-windows'></i>
                 <div class="card-content">
@@ -98,16 +101,9 @@
                     <h3>java</h3>
                 </div>
             </div>
-        </div>
+
+        </div> <!-- end cards page -->
     
     </container> <!-- end container -->
-
-    <script>
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function() {
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
-    </script>
 
 </body>
