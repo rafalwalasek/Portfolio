@@ -183,171 +183,25 @@ container {
         flex-wrap: wrap;
         justify-content: center;
         text-transform: uppercase;
-    }
+        position: relative;
+    } /* --- end cards-page --- */
 
-
-
+        /* --- stars --- */
+        canvas {
+            display: block;
+        } /* --- end stars --- */
     
-    
-    
-        
-    
-
-
-    #card_1 {
-        position: relative;
-        top: 70px;
-        left: 50px;
-        width: 150px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        box-shadow: 0 0 15px var(--main-color);
-        rotate: -20deg;
-        transition: 1s;
-    }
-        #card_1 .bxl-windows {
-            width: 100%;
-            height: auto;
-            font-size: 4rem;
-            color: var(--main-color);
-            text-align: center;
-        }
-            #card_1:hover {
-                transform: scale(1.3);
-                rotate: 0deg;
-            }
-    #card_2 {
-        position: relative;
-        top: 60px;
-        left: 40px;
-        width: 150px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        box-shadow: 0 0 15px var(--main-color);
-        rotate: -5deg;
-        transition: 1s;
-    }
-        #card_2 .bxs-server {
-            width: 100%;
-            height: auto;
-            font-size: 4rem;
-            color: var(--main-color);
-            text-align: center;
-        }
-            #card_2:hover {
-                transform: scale(1.3);
-                rotate: 0deg;
-            }
-    #card_3 {
-        position: relative;
-        top: 90px;
-        left: 40px;
-        width: 150px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        box-shadow: 0 0 15px var(--main-color);
-        rotate: 20deg;
-        transition: 1s;
-    }
-        #card_3 .bxs-data {
-            width: 100%;
-            height: auto;
-            font-size: 4rem;
-            color: var(--main-color);
-            text-align: center;
-        }
-            #card_3:hover {
-                transform: scale(1.3);
-                rotate: 0deg;
-            }
-    #card_4 {
-        position: relative;
-        top: 370px;
-        left: -400px;
-        width: 150px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        box-shadow: 0 0 15px var(--main-color);
-        rotate: -15deg;
-        transition: 1s;
-    }
-        #card_4 .bxl-html5 {
-            width: 100%;
-            height: auto;
-            font-size: 4rem;
-            color: var(--main-color);
-            text-align: center;
-        }
-            #card_4:hover {
-                transform: scale(1.3);
-                rotate: 0deg;
-            }
-    #card_5 {
-        position: relative;
-        top: -5px;
-        left: 40px;
-        width: 150px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        box-shadow: 0 0 15px var(--main-color);
-        rotate: 0deg;
-        transition: 1s;
-    }
-        #card_5 .bxl-css3 {
-            width: 100%;
-            height: auto;
-            font-size: 4rem;
-            color: var(--main-color);
-            text-align: center;
-        }
-            #card_5:hover {
-                transform: scale(1.3);
-                rotate: 0deg;
-            }
-    #card_6 {
-        position: relative;
-        top: 50px;
-        left: 10px;
-        width: 150px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        box-shadow: 0 0 15px var(--main-color);
-        rotate: 15deg;
-        transition: 1s;
-    }
-        #card_6 .bxl-java {
-            width: 100%;
-            height: auto;
-            font-size: 4rem;
-            color: var(--main-color);
-            text-align: center;
-        }
-            #card_6:hover {
-                transform: scale(1.3);
-                rotate: 0deg;
-            }
-/* --- end home cards --- */
+            /* --- black-hole --- */
+            .black-hole {
+                position: absolute;
+                top: 42%;
+                left: 41%;
+                z-index: 2;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                background: #000;
+                border-top: 8px solid #000;
+                box-shadow: 0 0 15px #000, 0 0 30px #000, 0 0 45px #000;
+                cursor: pointer;
+            } /* --- end black-hole --- */
