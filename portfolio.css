@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     /*font-family: "Poppins", sans-serif;*/
+    /*font-family: "Arial", sans-serif;*/
     text-decoration: none;
     list-style: none;
 }
@@ -96,6 +97,7 @@ container {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 0 20px #00008B;
+    overflow: hidden;
 } /* --- end container --- */
 
     /* --- profile-page --- */
@@ -147,6 +149,13 @@ container {
                 .profile-page p {
                     text-align: justify;
                 }
+                    .profile-page p a {
+                        color: var(--main-color);
+                        transition: .5s;
+                    }
+                        .profile-page p a:hover {
+                            color: #00abf0;
+                        }
                 .profile-page .btn-box {
                     margin-top: 1.2rem;
                 }
@@ -205,3 +214,53 @@ container {
                 box-shadow: 0 0 15px #000, 0 0 30px #000, 0 0 45px #000;
                 cursor: pointer;
             } /* --- end black-hole --- */
+
+/* === about-me === */
+
+.container-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 65px auto;
+}
+    .content-hero {
+        flex: 1;
+        width: 600px;
+        margin: 0 25px;
+    }
+        .content-hero h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+        .content-hero p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: var(--text-color);
+            text-align: justify;
+        }
+            .content-hero p a {
+                color: var(--main-color);
+                transition: .5s;
+            }
+                .content-hero p a:hover {
+                    color: #00abf0;
+                }
+    .image-hero {
+        flex: 1;
+        width: 600px;
+    }
+        .image-hero img {
+            width: 95%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00abf0;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+            .image-hero img:hover {
+                transform: scale(1.03);
+            }
+/* === end about-me === */
