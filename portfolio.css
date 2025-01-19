@@ -1,10 +1,93 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background: url('images/technology.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-width: 400px;
+}
+
+/* --- header --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px #00008b;
+    margin-top: 10px;
+    position: sticky;
+    top: 10px;
+}
+    .logo {
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    }
+        .logo img {
+            margin: 0 10px -10px 0;
+        }
+        .logo span {
+            color: #007bf0;
+        }
+    .hamburger-menu {
+        font-size: 32px;
+        cursor: pointer;
+        font-weight: 600;
+        display: none;
+    }
+    .nav-bar ul {
+        display: flex;
+        font-size: 20px;
+        font-weight: 600;
+    }
+        .nav-bar ul li {
+            margin: 0 10px;
+        }
+            .nav-bar ul li a {
+                transition: .3s;
+                padding: 10px;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+            }
+            .nav-bar ul li a:hover,
+            .nav-bar ul li a.active {
+                color: #007bf0;
+            }
+/* --- END header --- */
+/* --- container --- 
+main {
+    width: 1300px;
+    height: 1000px;
+    margin: 20px auto;
+    display: flex;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00008B;
+    overflow: hidden;
+}
+
+/* --- END container --- */
+
+/* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     /*font-family: "Poppins", sans-serif;*/
-    /*font-family: "Arial", sans-serif;*/
+    /*font-family: "Arial", sans-serif;
     text-decoration: none;
     list-style: none;
 }
@@ -26,7 +109,7 @@ body {
     color: var(--text-color);
 }
 
-/* --- header --- */
+/* --- header --- 
 header {
     width: 1300px;
     margin: 10px auto 0;
@@ -34,9 +117,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} /* --- end header --- */
+} /* --- end header --- 
 
-    /* --- header-logo --- */
+    /* --- header-logo --- 
     .logo {
         font-size: var(--big-font);
         font-weight: bold;
@@ -50,9 +133,9 @@ header {
         }
         .logo span {
             color: var(--main-color);
-        } /* --- end header-logo --- */
+        } /* --- end header-logo --- 
     
-    /* --- nav-menu --- */
+    /* --- nav-menu --- 
     .nav-bar ul {
         display: flex;
         gap: 25px;     
@@ -84,9 +167,9 @@ header {
                     }
                         .nav-bar ul li:first-child a::before {
                             width: 100%;
-                        } /* --- end nav-menu --- */
+                        } /* --- end nav-menu --- 
 
-/* --- container --- */
+/* --- container --- 
 container {
     width: 1300px;
     height: 700px;
@@ -98,9 +181,9 @@ container {
     border-radius: 10px;
     box-shadow: 0 0 20px #00008B;
     overflow: hidden;
-} /* --- end container --- */
+} /* --- end container --- 
 
-    /* --- profile-page --- */
+    /* --- profile-page --- 
     .profile-page {
         width: 650px;
         height: 700px;
@@ -182,9 +265,9 @@ container {
                                 background: #00008B;
                                 color: var(--text-color);
                                 border: var(--border);
-                            } /* --- end profile-page --- */
+                            } /* --- end profile-page --- 
 
-    /* --- cards-page --- */
+    /* --- cards-page --- 
     .cards-page {
         width: 650px;
         height: 700px;
@@ -193,14 +276,14 @@ container {
         justify-content: center;
         text-transform: uppercase;
         position: relative;
-    } /* --- end cards-page --- */
+    } /* --- end cards-page --- 
 
-        /* --- stars --- */
+        /* --- stars --- 
         canvas {
             display: block;
-        } /* --- end stars --- */
+        } /* --- end stars --- 
     
-            /* --- black-hole --- */
+            /* --- black-hole --- 
             .black-hole {
                 position: absolute;
                 top: 42%;
@@ -213,10 +296,9 @@ container {
                 border-top: 8px solid #000;
                 box-shadow: 0 0 15px #000, 0 0 30px #000, 0 0 45px #000;
                 cursor: pointer;
-            } /* --- end black-hole --- */
+            } /* --- end black-hole --- 
 
-/* === about-me === */
-
+/* === about-me === 
 .container-hero {
     display: flex;
     justify-content: center;
@@ -263,4 +345,4 @@ container {
             .image-hero img:hover {
                 transform: scale(1.03);
             }
-/* === end about-me === */
+ === end about-me === */
