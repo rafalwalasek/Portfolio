@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
     .hamburger-menu {
         display: block;
     }
@@ -35,4 +39,20 @@
                     display: block;
                     width: auto;
                 }
+
+    /*.main {
+        flex-direction: column;
+    }
+        .profile-page,
+        .cards-page {
+            height: 500px;
+        }
+        .profile-page {
+            background: seagreen;
+        }
+        .cards-page {
+            background: darkblue;
+        }*/
+
+    
 }

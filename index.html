@@ -7,7 +7,8 @@
     <link rel="icon" href="images/w.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="responsive/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/tiles.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -25,7 +26,7 @@
         <nav class="nav-bar" id="nav-bar" role="navigation">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Me</a></li>
+                <li><a href="pages/about-me.html">About Me</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -34,7 +35,7 @@
 
     <!-- container -->
     <main>
-        <!-- profile page 
+        <!-- profile page -->
         <div class="profile-page">
             <img src="images/rafal-walasek.png" alt="Rafal">
             <h1>Rafał Walasek</h1>
@@ -50,21 +51,26 @@
             </p>
 
             <div class="btn-box">
-                <a href="#" class="btn">Download CV</a>
+                <a href="CVs/cv.pdf" class="btn" download>Download CV</a>
             </div>
-        </div> <!-- end profile page 
+        </div> <!-- end profile page -->
         
-        <!-- cards page 
+        <!-- cards page -->
         <div class="cards-page">
 
+            <p>Skills</p>
             <canvas></canvas>
-            <div class="black-hole"></div>
+            <div class="black-hole">
+                <div class="tile tile-1">html</div>
+                <div class="tile tile-2">css</div>
+                <div class="tile tile-3">windows</div>
+            </div>
 
         </div> <!-- end cards page -->
 
-    </main> <!-- end container 
+    </main> <!-- end container -->
 
-    <script src="stars.js"></script>-->
+    <script src="scripts/stars.js"></script>
     <script src="scripts/responsive.js"></script>
 
 </body>

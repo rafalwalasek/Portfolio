@@ -1,0 +1,40 @@
+.tile {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: #e6dfdf;
+    box-shadow: 0 0 20px #555;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+    .black-hole:hover .tile {
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+    }
+    .tile:hover {
+        transform: scale(1.2);
+    }
+
+.tile-1 {
+    left: -110px;
+    opacity: 0;
+}
+.tile-2 {
+    right: -110px;
+    opacity: 0;
+}
+.tile-3 {
+    top: -110px;
+    left: 110px;
+    opacity: 0;
+}
