@@ -23,8 +23,9 @@
             text-align: justify;
         }
             .content-about-me p a {
-                color: #fff;
                 transition: .5s;
+                color: #669bff;
+                text-decoration: underline;
             }
                 .content-about-me p a:hover {
                     color: #00abf0;

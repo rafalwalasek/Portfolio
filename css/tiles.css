@@ -30,11 +30,37 @@
     opacity: 0;
 }
 .tile-2 {
-    right: -110px;
+    right: -130px;
+    top: -175px;
     opacity: 0;
 }
 .tile-3 {
+    top: -75px;
+    left: 100px;
+    opacity: 0;
+}
+.tile-4 {
+    top: -97px;
+    right: 185px;
+    opacity: 0;
+}
+.tile-5 {
+    top: 70px;
+    right: 220px;
+    opacity: 0;
+}
+.tile-6 {
+    top: 110px;
+    right: 115px;
+    opacity: 0;
+}
+.tile-7 {
     top: -110px;
-    left: 110px;
+    right: 40px;
+    opacity: 0;
+}
+.tile-8 {
+    top: -220px;
+    right: 30px;
     opacity: 0;
 }
