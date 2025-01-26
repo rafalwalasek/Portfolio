@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background: url('../../images/technology.jpg') no-repeat center center fixed;
+    min-width: 400px;
+}
+
+/* --- header --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px #00008b;
+    margin-top: 10px;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+    .logo {
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    }
+        .logo img {
+            margin: 0 10px -10px 0;
+        }
+        .logo span {
+            color: #007bf0;
+        }
+    .hamburger-menu {
+        font-size: 32px;
+        cursor: pointer;
+        font-weight: 600;
+        display: none;
+    }
+    .nav-bar ul {
+        display: flex;
+        font-size: 20px;
+        font-weight: 600;
+    }
+        .nav-bar ul li {
+            margin: 0 10px;
+        }
+            .nav-bar ul li a {
+                transition: .3s;
+                padding: 10px;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+            }
+            .nav-bar ul li a:hover,
+            .nav-bar ul li a.active {
+                color: #007bf0;
+            }
+/* --- END header --- */
+

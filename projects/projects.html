@@ -8,6 +8,7 @@
     
         <link rel="stylesheet" href="../portfolio.css">
         <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="projects.css">
     
         <!-- box icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -35,14 +36,36 @@
         </nav>
     </header> <!-- end header -->
 
-    <!-- tiles projects-->
-    <main>
+    <!-- slider projects-->
+    <div class="slider-wrapper">
 
-        
+        <!--<i class='bx bxs-left-arrow' ></i>-->
+        <div class="card-list">
+            
+            <div class="card-item">
+                <div class="number-color-1">1</div>
+                <h2 class="project-name">Testy</h2>
+                <p class="brief-description">Projekt Testy to aplikacja edukacyjna. Platforma oferuje funkcje takie jak: rozwiązywanie testów, wprowadzanie, aktualizowanie i usuwanie pytań. Stworzona przy użyciu technologii HTML, CSS, JavaScript, PHP i SQL. Dzięki intuicyjnemu interfejsowi użytkownik może łatwo rozwiązywać testy i analizować wyniki.</p>
+                <a href="tests/tests.php">
+                    <button class="show-project">Pokaż projekt</button>
+                </a>
+            </div>
+            <div class="card-item">
+                <div class="number-color-2">2</div>
+                <h2 class="project-name">Kalkulator</h2>
+                <p class="brief-description">Projekt pozwala na wykonywanie podstawowych obliczeń matematycznych w sposób szybki i intuicyjny, takich jak: dodawanie, odejmowanie, mnożenie i dzielenie. Wykorzystuje technologie: HTML, CSS, JavaScript.</p>
+                <a href="calkulator/calkulator.html">
+                    <button class="show-project">Pokaż projekt</button>
+                </a>
+            </div>
+            
+        </div>
+        <!--<i class='bx bxs-right-arrow' ></i>-->
 
-    </main> <!-- end tiles projects-->
+    </div> <!-- end slider projects-->
 
     <script src="../scripts/responsive.js"></script>
+    <!--<script src="projects.js"></script>-->
 
 </body>
 </html>

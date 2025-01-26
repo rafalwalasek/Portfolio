@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Webside</title>
-    <link rel="icon" href="../images/w.ico" type="image/x-icon">
+    <title>Testy</title>
+    <link rel="icon" href="images/w.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="tests.css">
+    <link rel="stylesheet" href="time/time.css">
+    <link rel="stylesheet" href="css/cover.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -18,15 +20,20 @@
     <!-- header -->
     <header>
         <div class="logo">
-            <img src="images/w.ico" alt="W"><span>T</span>ests.
+            <img src="images/w.ico" alt="Logo W"><span>R</span>afał.
         </div>
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#" class="active">Tests</a>
-            <a href="#">Contact</a>
+        <div class="hamburger-menu" id="hamburger">
+            &#9776;
+        </div>
+        <nav class="nav-bar" id="nav-bar" role="navigation">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../pages/about-me.html">About Me</a></li>
+                <li><a href="../../pages/services.html">Services</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="#" class="active">Tests</a></li>
+                <li><a href="../../pages/contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header> <!-- end header -->
 
@@ -46,7 +53,7 @@
                     <i class='bx bx-wifi'></i>
                     <button class="btn-start" data-category="sieci">Start</button>
                 </div>
-                <div class="box-quiz">
+                <!--<div class="box-quiz">
                     <h2>Systemy</h2>
                     <i class='bx bx-devices'></i>
                     <button class="btn-start" data-category="systemy">Start</button>
@@ -228,9 +235,8 @@
         
     </main> <!-- end main -->
 
-    <script src="scripts/quiz.js"></script>
+    <script src="scripts/tests.js"></script>
     <!--<script src="time/time.js"></script>-->
-    <script src="scripts/scrolling.js"></script>
     <script src="scripts/endTest.js"></script>
     <script src="scripts/checkbox.js"></script>
 
