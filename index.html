@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="images/w.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- lato font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- container -->
+    <div class="container">
+
+        <!-- header -->
+        <div class="header">
+
+            <div class="logo">
+                <img src="images/w.ico" alt="Logo W"><span>R</span>afał.
+            </div>
+
+            <div class="hamburger-menu" id="hamburger">
+                &#9776;
+            </div>
+
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="pages/about-me.html">About Me</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div> <!-- end header -->
+
+        <!-- main -->
+        <div class="main">
+
+            <!-- profile page -->
+            <div class="profile-page">
+                <img src="images/rafal-walasek.png" alt="Rafal">
+                <h1>Rafał Walasek</h1>
+                <h3>Junior IT Administrator</h3>
+
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100049146996282" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com/in/rafa%C5%82-walasek/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/rafalwalasek" target="_blank"><i class='bx bxl-git'></i></a>
+                </div>
+
+                <p>
+                    My main goal is to gain experience and improve my skills in the IT field. I am always learning and developing by working on my own projects. I am ambitious, hardworking, and open to new challenges. I follow the rule: 'If I don’t know something, I ask.' I have a bachelor's degree in Computer Science, and I want to continue growing in a team that supports learning and gives the opportunity to learn from experienced professionals. More <a href="pages/about-me.html">About Me</a>.
+                </p>
+
+                <div class="btn-box">
+                    <a href="files/cv.pdf" class="btn" download>Download CV</a>
+                </div>
+            </div> <!-- end profile page -->
+
+            <!-- cards page -->
+            <div class="cards-page">
+
+                <canvas></canvas>
+                <div class="black-hole">
+                    <p>Skills</p>
+                    <div class="tile tile-1">windows</div>
+                    <div class="tile tile-2">css</div>
+                    <div class="tile tile-3">html</div>
+                    <div class="tile tile-4">sql</div>
+                    <div class="tile tile-5">server</div>
+                    <div class="tile tile-6">linux</div>
+                    <div class="tile tile-7">git</div>
+                    <div class="tile tile-8">java</div>
+                </div>
+
+            </div> <!-- end cards page -->
+
+        </div> <!-- end main -->
+
+    </div> <!-- end container -->
+
+    <script src="scripts/stars.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" href="../images/w.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../portfolio.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- lato font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- container -->
+    <div class="container">
+
+        <!-- header -->
+        <div class="header">
+
+            <div class="logo">
+                <img src="../images/w.ico" alt="Logo W"><span>R</span>afał.
+            </div>
+
+            <div class="hamburger-menu" id="hamburger">
+                &#9776;
+            </div>
+
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about-me.html">About Me</a></li>
+                    <li><a href="#" class="active">Projects</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div> <!-- end header -->
+
+        <!-- main -->
+        <div class="main">
+
+            <!-- slider projects -->
+            <div class="container-projects">
+                <div class="slider-wrapper">
+
+                    <i id="prev-slide" class='bx bxs-caret-left-circle'></i>
+                    <div class="cards-list">
+                        
+                        <div class="card-item">
+                            <div id="card-header" class="card-header">
+                                <h1>1</h1>
+                            </div>
+                            <div class="card-content">
+                                <h2>Calculator</h2>
+                                <p>The project allows for performing basic mathematical calculations quickly and intuitively, such as addition, subtraction, multiplication, and division. It uses technologies: HTML, CSS, and JavaScript.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Start</a>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-header">
+                                <h1>2</h1>
+                            </div>
+                            <div class="card-content">
+                                <h2>Tests</h2>
+                                <p>It is an educational application that offers features such as solving tests, adding, updating, and deleting questions. It is built using HTML, CSS, JavaScript, PHP, and SQL. Thanks to its intuitive interface, users can easily take tests and analyze their results.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Start</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <i id="next-slide" class='bx bxs-caret-right-circle' ></i>
+
+                </div>
+            </div> <!-- end slider projects -->
+
+        </div> <!-- end main -->
+
+    </div> <!-- end container -->
+
+    <script src="../scripts/hamburger-menu.js"></script>
+    <script src="../scripts/slider.js"></script>
+
+</body>
+</html>
