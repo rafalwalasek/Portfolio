@@ -1,0 +1,42 @@
+.container-calculator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #calc {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        place-items: center;
+        gap: 20px 15px;
+        padding: 20px;
+        font-size: 40px;
+        text-align: center;
+        box-shadow: 0 0 15px #1aaaee;
+    }
+        #inputField {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            width: 400px;
+            height: 80px;
+            box-shadow: 0 0 7px #1aaaee;
+            margin-bottom: 5px;
+            background: transparent;
+            border: none;
+            font-size: 38px;
+            text-align: right;
+            padding-right: 25px;
+        }
+        .btn-calc {
+            width: 80px;
+            height: 80px;
+            box-shadow: 0 0 7px #1aaaee;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            border: none;
+            font-size: 40px;
+        }

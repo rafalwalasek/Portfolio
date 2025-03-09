@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="icon" href="../../images/w.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../portfolio.css">
+    <link rel="stylesheet" href="kalkulator.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- lato font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- container -->
+    <div class="container">
+
+        <!-- header -->
+        <div class="header">
+
+            <div class="logo">
+                <img src="../../images/w.ico" alt="Logo W"><span>R</span>afał.
+            </div>
+
+            <div class="hamburger-menu" id="hamburger">
+                &#9776;
+            </div>
+
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../pages/about-me.html">About Me</a></li>
+                    <li><a href="#" class="active">Calculator</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div> <!-- end header -->
+
+        <!-- main -->
+        <div class="main">
+
+            <div class="container-calculator">
+                <div id="calc">
+
+                    <input type="text" id="inputField" readonly>
+                    <button class="btn-calc" id="clearField" value="C">C</button>
+                    <button class="btn-calc" id="openingParenthesis" value="(">(</button>
+                    <button class="btn-calc" id="closingParenthesis" value=")">)</button>
+                    <button class="btn-calc" id="percentSign" value="%">%</button>
+                    <button class="btn-calc" id="seven" value="7">7</button>
+                    <button class="btn-calc" id="eight" value="8">8</button>
+                    <button class="btn-calc" id="nine" value="9">9</button>
+                    <button class="btn-calc" id="slash" value="/">/</button>
+                    <button class="btn-calc" id="four" value="4">4</button>
+                    <button class="btn-calc" id="five" value="5">5</button>
+                    <button class="btn-calc" id="six" value="6">6</button>
+                    <button class="btn-calc" id="asterisk" value="*">*</button>
+                    <button class="btn-calc" id="one" value="1">1</button>
+                    <button class="btn-calc" id="two" value="2">2</button>
+                    <button class="btn-calc" id="three" value="3">3</button>
+                    <button class="btn-calc" id="minus" value="-">-</button>
+                    <button class="btn-calc" id="dot" value=".">.</button>
+                    <button class="btn-calc" id="zero" value="0">0</button>
+                    <button class="btn-calc" id="equals" value="=">=</button>
+                    <button class="btn-calc" id="plus" value="+">+</button>
+
+                </div>
+            </div>
+
+        </div> <!-- end main -->
+
+    </div> <!-- end container -->
+
+    <script src="../../scripts/hamburger-menu.js"></script>
+    <script src="kalkulator.js"></script>
+
+</body>
+</html>
