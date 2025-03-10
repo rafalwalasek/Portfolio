@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date & Time</title>
+    <title>Calendar</title>
     <link rel="icon" href="../../images/w.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../../portfolio.css">
-    <link rel="stylesheet" href="zegar.css">
+    <link rel="stylesheet" href="kalendarz.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -34,7 +34,7 @@
                 <ul>
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../../pages/about-me.html">About Me</a></li>
-                    <li><a href="#" class="active">Timer</a></li>
+                    <li><a href="#" class="active">Calendar</a></li>
                     <li><a href="../projects.html">Projects</a></li>
                     <li><a href="../../pages/contact.html">Contact</a></li>
                 </ul>
@@ -45,8 +45,27 @@
         <!-- main -->
         <div class="main">
 
-            <div class="container-timer">
-                <div id="zegar"></div>
+            <div class="container-calendar">
+                
+                <div id="calendar">
+                    
+                    <div id="months-years">
+                        <div id="months"></div>
+                        <div id="years"></div>
+                    </div>
+                    <div id="days-names">
+                        <div>Monday</div>
+                        <div>Tuesday</div>
+                        <div>Wednesday</div>
+                        <div>Thursday</div>
+                        <div>Friday</div>
+                        <div>Saturday</div>
+                        <div>Sunday</div>
+                    </div>
+                    <div id="days"></div>
+
+                </div>
+
             </div>
 
         </div> <!-- end main -->
@@ -54,7 +73,7 @@
     </div> <!-- end container -->
 
     <script src="../../scripts/hamburger-menu.js"></script>
-    <script src="zegar.js"></script>
+    <script src="kalendarz.js"></script>
 
 </body>
 </html>
